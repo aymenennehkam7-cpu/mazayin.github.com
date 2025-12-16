@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mazayin - Experience the pinnacle of Moroccan fine dining in Casablanca. Luxury cuisine, elegant ambiance, and unforgettable culinary experiences.">
+    <meta name="keywords" content="luxury restaurant, fine dining, Moroccan cuisine, Casablanca, gourmet food">
+    <meta name="author" content="Mazayin Restaurant">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Mazayin - Luxury Moroccan Fine Dining">
+    <meta property="og:description" content="Experience the pinnacle of Moroccan fine dining in Casablanca">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200">
+    
+    <title>Mazayin - Fine Dining Casablanca | Luxury Moroccan Restaurant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/chef.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <!-- ============================================
+         HEADER & NAVIGATION
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="navbar__logo">
+                    <a href="#home" class="logo">
+                        <span class="logo__icon">✦</span>
+                        <span class="logo__text">MAZAYIN</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__link active">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#menu" class="navbar__link">Menu</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#chef" class="navbar__link">Chef</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#gallery" class="navbar__link">Gallery</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#reservations" class="navbar__link navbar__link--cta">Reserve Table</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span class="navbar__toggle-bar"></span>
+                    <span class="navbar__toggle-bar"></span>
+                    <span class="navbar__toggle-bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero__background">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" 
+                 alt="Luxury dining ambiance" 
+                 class="hero__image">
+            <div class="hero__overlay"></div>
+        </div>
+        
+        <div class="hero__content">
+            <div class="container">
+                <div class="hero__text">
+                    <p class="hero__subtitle" data-aos="fade-up">Welcome to Excellence</p>
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                        A Symphony of<br>
+                        <span class="hero__title--accent">Moroccan Flavors</span>
+                    </h1>
+                    <p class="hero__description" data-aos="fade-up" data-aos-delay="200">
+                        Experience the art of fine dining where tradition meets innovation,<br>
+                        crafted with passion and served with elegance.
+                    </p>
+                    <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#reservations" class="btn btn--primary">Reserve Your Table</a>
+                        <a href="#menu" class="btn btn--secondary">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="hero__scroll">
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-indicator__text">Scroll to Explore</span>
+                <span class="scroll-indicator__line"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <!-- About Image -->
+                <div class="about__image-wrapper" data-aos="fade-right">
+                    <div class="about__image-container">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" 
+                             alt="Mazayin restaurant interior" 
+                             class="about__image">
+                        <div class="about__badge">
+                            <span class="about__badge-text">Since 2015</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Content -->
+                <div class="about__content" data-aos="fade-left">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">
+                        Where Tradition<br>
+                        Meets <span class="text-accent">Innovation</span>
+                    </h2>
+                    <p class="about__text">
+                        Nestled in the heart of Casablanca, Mazayin represents the pinnacle of 
+                        Moroccan fine dining. Our journey began with a simple vision: to honor 
+                        the rich culinary heritage of Morocco while embracing contemporary 
+                        gastronomy techniques.
+                    </p>
+                    <p class="about__text">
+                        Each dish tells a story, weaving together centuries-old recipes with 
+                        modern creativity. Our commitment to excellence extends from sourcing 
+                        the finest local ingredients to crafting an ambiance that captures the 
+                        essence of Moroccan hospitality.
+                    </p>
+                    
+                    <div class="about__features">
+                        <div class="feature">
+                            <span class="feature__icon">✦</span>
+                            <div class="feature__content">
+                                <h3 class="feature__title">Authentic Cuisine</h3>
+                                <p class="feature__text">Traditional recipes reimagined</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature__icon">✦</span>
+                            <div class="feature__content">
+                                <h3 class="feature__title">Premium Ingredients</h3>
+                                <p class="feature__text">Locally sourced, globally inspired</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature__icon">✦</span>
+                            <div class="feature__content">
+                                <h3 class="feature__title">Elegant Ambiance</h3>
+                                <p class="feature__text">Luxury in every detail</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#reservations" class="btn btn--outline">Experience Mazayin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MENU SECTION
+         ============================================ -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu__header" data-aos="fade-up">
+                <span class="section-label">Culinary Excellence</span>
+                <h2 class="section-title">Our Signature <span class="text-accent">Menu</span></h2>
+                <p class="section-description">
+                    Discover our carefully curated selection of exquisite dishes,<br>
+                    each crafted to perfection by our award-winning culinary team.
+                </p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="menu__categories" data-aos="fade-up" data-aos-delay="100">
+                <button class="menu__category active" data-category="all">All Dishes</button>
+                <button class="menu__category" data-category="appetizers">Appetizers</button>
+                <button class="menu__category" data-category="mains">Main Courses</button>
+                <button class="menu__category" data-category="desserts">Desserts</button>
+            </div>
+            
+            <!-- Menu Grid -->
+            <div class="menu__grid">
+                <!-- Appetizer 1 -->
+                <div class="menu-item" data-category="appetizers" data-aos="fade-up">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=600&q=80" 
+                             alt="Moroccan mezze platter" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Royal Mezze Platter</h3>
+                            <span class="menu-item__price">320 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            An artful selection of traditional Moroccan appetizers featuring hummus, 
+                            zaalouk, and marinated olives
+                        </p>
+                        <span class="menu-item__badge">Chef's Special</span>
+                    </div>
+                </div>
+                
+                <!-- Appetizer 2 -->
+                <div class="menu-item" data-category="appetizers" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" 
+                             alt="Harira soup" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Saffron Harira</h3>
+                            <span class="menu-item__price">180 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            Traditional Moroccan soup enriched with saffron, chickpeas, 
+                            and tender lamb
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Main Course 1 -->
+                <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80" 
+                             alt="Lamb tagine" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Lamb Tagine Royale</h3>
+                            <span class="menu-item__price">580 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            Slow-cooked lamb with apricots, almonds, and aromatic spices, 
+                            served with saffron couscous
+                        </p>
+                        <span class="menu-item__badge">Signature Dish</span>
+                    </div>
+                </div>
+                
+                <!-- Main Course 2 -->
+                <div class="menu-item" data-category="mains" data-aos="fade-up">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1580959375944-1ab5cec85961?w=600&q=80" 
+                             alt="Seafood pastilla" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Seafood Pastilla</h3>
+                            <span class="menu-item__price">650 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            Delicate phyllo layers filled with fresh seafood, vermicelli, 
+                            and aromatic herbs
+                        </p>
+                        <span class="menu-item__badge">Chef's Special</span>
+                    </div>
+                </div>
+                
+                <!-- Main Course 3 -->
+                <div class="menu-item" data-category="mains" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=600&q=80" 
+                             alt="Grilled sea bass" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Mediterranean Sea Bass</h3>
+                            <span class="menu-item__price">720 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            Perfectly grilled sea bass with chermoula marinade, 
+                            seasonal vegetables, and saffron aioli
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Dessert 1 -->
+                <div class="menu-item" data-category="desserts" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" 
+                             alt="Baklava" 
+                             class="menu-item__image">
+                        <div class="menu-item__overlay">
+                            <span class="menu-item__view">View Details</span>
+                        </div>
+                    </div>
+                    <div class="menu-item__content">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">Orange Blossom Baklava</h3>
+                            <span class="menu-item__price">220 MAD</span>
+                        </div>
+                        <p class="menu-item__description">
+                            Layers of crispy phyllo with pistachios and almonds, 
+                            drizzled with orange blossom honey
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu__footer" data-aos="fade-up">
+                <p class="menu__note">
+                    All prices are in Moroccan Dirhams (MAD) and include service. 
+                    Please inform our staff of any dietary restrictions.
+                </p>
+                <a href="#reservations" class="btn btn--primary">Reserve Your Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CHEF SECTION
+         ============================================ -->
+    <section class="chef" id="chef">
+        <div class="container">
+            <div class="chef__grid">
+                <!-- Chef Content -->
+                <div class="chef__content" data-aos="fade-right">
+                    <span class="section-label">Master of Cuisine</span>
+                    <h2 class="section-title">
+                        Meet Chef<br>
+                        <span class="text-accent">Youssef El Mansouri</span>
+                    </h2>
+                    <p class="chef__text">
+                        With over 20 years of culinary excellence, Chef Youssef brings a unique 
+                        perspective to Moroccan gastronomy. Trained in both Paris and Marrakech, 
+                        he masterfully bridges traditional techniques with contemporary innovation.
+                    </p>
+                    <p class="chef__text">
+                        His philosophy is simple yet profound: "Every ingredient has a story, 
+                        and every dish should honor its origin while exciting the palate." 
+                        This dedication has earned him recognition from prestigious culinary 
+                        institutions worldwide.
+                    </p>
+                    
+                    <div class="chef__achievements">
+                        <div class="achievement">
+                            <span class="achievement__number">3</span>
+                            <span class="achievement__label">Michelin Stars</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement__number">20+</span>
+                            <span class="achievement__label">Years Experience</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement__number">15</span>
+                            <span class="achievement__label">International Awards</span>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="chef__quote">
+                        "Cooking is not just about feeding the body; it's about nourishing 
+                        the soul and creating memories that last a lifetime."
+                    </blockquote>
+                </div>
+                
+                <!-- Chef Image -->
+                <div class="chef__image-wrapper" data-aos="fade-left">
+                    <div class="chef__image-container">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80" 
+                             alt="Chef Youssef El Mansouri" 
+                             class="chef__image">
+                        <div class="chef__decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALLERY SECTION
+         ============================================ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery__header" data-aos="fade-up">
+                <span class="section-label">Visual Journey</span>
+                <h2 class="section-title">Mazayin <span class="text-accent">Gallery</span></h2>
+                <p class="section-description">
+                    Immerse yourself in the elegance and artistry that defines our restaurant
+                </p>
+            </div>
+            
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" 
+                         alt="Mazayin restaurant interior" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Elegant Interior</span>
+                    </div>
+                </div>
+                
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1615719413546-198b25453f85?w=600&q=80" 
+                         alt="Gourmet dish presentation" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Culinary Art</span>
+                    </div>
+                </div>
+                
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" 
+                         alt="Fine dining table setting" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Table Setting</span>
+                    </div>
+                </div>
+                
+                <div class="gallery__item" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80" 
+                         alt="Signature cocktail" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Crafted Cocktails</span>
+                    </div>
+                </div>
+                
+                <div class="gallery__item gallery__item--wide" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&q=80" 
+                         alt="Chef preparing dish" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Kitchen Excellence</span>
+                    </div>
+                </div>
+                
+                <div class="gallery__item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" 
+                         alt="Dessert presentation" 
+                         class="gallery__image">
+                    <div class="gallery__overlay">
+                        <span class="gallery__caption">Sweet Endings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         RESERVATIONS SECTION
+         ============================================ -->
+    <section class="reservations" id="reservations">
+        <div class="container">
+            <div class="reservations__grid">
+                <!-- Reservation Info -->
+                <div class="reservations__info" data-aos="fade-right">
+                    <span class="section-label">Book Your Table</span>
+                    <h2 class="section-title">
+                        Reserve Your<br>
+                        <span class="text-accent">Unforgettable Experience</span>
+                    </h2>
+                    <p class="reservations__text">
+                        Join us for an extraordinary culinary journey. Whether it's an intimate 
+                        dinner, a celebration, or a business gathering, Mazayin promises an 
+                        experience beyond compare.
+                    </p>
+                    
+                    <div class="reservations__details">
+                        <div class="detail">
+                            <span class="detail__icon">📍</span>
+                            <div class="detail__content">
+                                <h3 class="detail__title">Location</h3>
+                                <p class="detail__text">Boulevard de la Corniche, Casablanca 20000, Morocco</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail">
+                            <span class="detail__icon">🕐</span>
+                            <div class="detail__content">
+                                <h3 class="detail__title">Hours</h3>
+                                <p class="detail__text">
+                                    Lunch: 12:00 PM - 3:00 PM<br>
+                                    Dinner: 7:00 PM - 11:00 PM<br>
+                                    Closed Mondays
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail">
+                            <span class="detail__icon">📞</span>
+                            <div class="detail__content">
+                                <h3 class="detail__title">Contact</h3>
+                                <p class="detail__text">
+                                    Phone: +212 522 123 456<br>
+                                    Email: reservations@mazayin.ma
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reservation Form -->
+                <div class="reservations__form-wrapper" data-aos="fade-left">
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" 
+                                       placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" 
+                                       placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" 
+                                       placeholder="+212 6XX XXX XXX" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests" class="form-label">Number of Guests *</label>
+                                <select id="guests" name="guests" class="form-input" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7+">7+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date" class="form-label">Date *</label>
+                                <input type="date" id="date" name="date" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time" class="form-label">Time *</label>
+                                <select id="time" name="time" class="form-input" required>
+                                    <option value="">Select time</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                    <option value="21:30">9:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Special Requests</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" 
+                                      rows="4" placeholder="Dietary restrictions, special occasions, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Confirm Reservation
+                        </button>
+                        
+                        <p class="form-note">
+                            * Required fields. Reservations will be confirmed within 24 hours.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
