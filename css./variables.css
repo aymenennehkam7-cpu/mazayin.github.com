@@ -1,0 +1,290 @@
+/**
+ * Mazaya Restaurant - CSS Custom Properties
+ * Professional variable system for consistent design
+ * Optimized for Moroccan fine dining aesthetic
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ============================================
+     COLOR PALETTE - Elegant Moroccan Fine Dining
+     ============================================ */
+  
+  /* Primary Colors - Deep Burgundy/Maroon */
+  --color-primary-900: #4a0404;
+  --color-primary-800: #6b0505;
+  --color-primary-700: #8b0000; /* Main brand color */
+  --color-primary-600: #a01010;
+  --color-primary-500: #b52020;
+  --color-primary-400: #c94040;
+  --color-primary-300: #d96060;
+  --color-primary-200: #e89090;
+  --color-primary-100: #f4c0c0;
+
+  /* Secondary Colors - Warm Gold/Bronze */
+  --color-secondary-900: #4a3a00;
+  --color-secondary-800: #6b5400;
+  --color-secondary-700: #8b6f00;
+  --color-secondary-600: #b8921d; /* Main accent gold */
+  --color-secondary-500: #d4a82e;
+  --color-secondary-400: #e0ba52;
+  --color-secondary-300: #e8cc76;
+  --color-secondary-200: #f0de9a;
+  --color-secondary-100: #f8f0cd;
+
+  /* Neutral Colors - Sophisticated Grays */
+  --color-neutral-900: #1a1a1a;
+  --color-neutral-800: #2d2d2d;
+  --color-neutral-700: #404040;
+  --color-neutral-600: #5a5a5a;
+  --color-neutral-500: #737373;
+  --color-neutral-400: #9a9a9a;
+  --color-neutral-300: #b8b8b8;
+  --color-neutral-200: #d6d6d6;
+  --color-neutral-100: #ebebeb;
+  --color-neutral-50: #f7f7f7;
+
+  /* Semantic Colors */
+  --color-success: #2d7a3e;
+  --color-warning: #d4a82e;
+  --color-error: #c92020;
+  --color-info: #2d5a7a;
+
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7f7f7;
+  --color-bg-dark: #1a1a1a;
+  --color-bg-overlay: rgba(26, 26, 26, 0.85);
+  --color-bg-light-overlay: rgba(255, 255, 255, 0.95);
+
+  /* Text Colors */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #404040;
+  --color-text-muted: #737373;
+  --color-text-light: #f7f7f7;
+  --color-text-white: #ffffff;
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  
+  /* Font Families */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  /* Font Sizes - Fluid Typography */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.375rem);
+  --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.625rem);
+  --font-size-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.625rem);
+  --font-size-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3.25rem);
+  --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 4.5rem);
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* ============================================
+     SPACING SCALE - 8px base
+     ============================================ */
+  
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+  --space-40: 10rem;    /* 160px */
+  --space-48: 12rem;    /* 192px */
+  --space-56: 14rem;    /* 224px */
+  --space-64: 16rem;    /* 256px */
+
+  /* ============================================
+     LAYOUT & CONTAINERS
+     ============================================ */
+  
+  --container-xs: 20rem;      /* 320px */
+  --container-sm: 24rem;      /* 384px */
+  --container-md: 28rem;      /* 448px */
+  --container-lg: 32rem;      /* 512px */
+  --container-xl: 36rem;      /* 576px */
+  --container-2xl: 42rem;     /* 672px */
+  --container-3xl: 48rem;     /* 768px */
+  --container-4xl: 56rem;     /* 896px */
+  --container-5xl: 64rem;     /* 1024px */
+  --container-6xl: 72rem;     /* 1152px */
+  --container-7xl: 80rem;     /* 1280px */
+  --container-full: 100%;
+
+  /* Content widths */
+  --width-prose: 65ch;
+  --width-narrow: 45ch;
+  --width-wide: 85ch;
+
+  /* ============================================
+     BREAKPOINTS (for JS usage)
+     ============================================ */
+  
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ============================================
+     BORDERS & RADIUS
+     ============================================ */
+  
+  --border-width-thin: 1px;
+  --border-width-default: 2px;
+  --border-width-thick: 4px;
+
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-default: 0.5rem;   /* 8px */
+  --radius-md: 0.75rem;   /* 12px */
+  --radius-lg: 1rem;      /* 16px */
+  --radius-xl: 1.5rem;    /* 24px */
+  --radius-2xl: 2rem;     /* 32px */
+  --radius-full: 9999px;
+
+  /* ============================================
+     SHADOWS
+     ============================================ */
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-default: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  
+  /* Colored shadows for luxury feel */
+  --shadow-primary: 0 10px 25px -5px rgba(139, 0, 0, 0.3);
+  --shadow-gold: 0 10px 25px -5px rgba(184, 146, 29, 0.3);
+
+  /* ============================================
+     TRANSITIONS & ANIMATIONS
+     ============================================ */
+  
+  /* Duration */
+  --duration-instant: 75ms;
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-moderate: 350ms;
+  --duration-slow: 500ms;
+  --duration-slower: 750ms;
+  --duration-slowest: 1000ms;
+
+  /* Easing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.45, 0, 0.15, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Standard transitions */
+  --transition-colors: color var(--duration-base) var(--ease-in-out),
+                       background-color var(--duration-base) var(--ease-in-out),
+                       border-color var(--duration-base) var(--ease-in-out);
+  --transition-transform: transform var(--duration-base) var(--ease-smooth);
+  --transition-opacity: opacity var(--duration-base) var(--ease-in-out);
+  --transition-all: all var(--duration-base) var(--ease-in-out);
+  --transition-shadow: box-shadow var(--duration-base) var(--ease-in-out);
+
+  /* ============================================
+     Z-INDEX LAYERS
+     ============================================ */
+  
+  --z-behind: -1;
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+  --z-notification: 1700;
+
+  /* ============================================
+     MISC UTILITIES
+     ============================================ */
+  
+  /* Aspect Ratios */
+  --aspect-square: 1 / 1;
+  --aspect-video: 16 / 9;
+  --aspect-cinema: 21 / 9;
+  --aspect-portrait: 3 / 4;
+  --aspect-landscape: 4 / 3;
+
+  /* Opacity */
+  --opacity-0: 0;
+  --opacity-5: 0.05;
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+  --opacity-100: 1;
+
+  /* Blur */
+  --blur-sm: 4px;
+  --blur-default: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+  --blur-3xl: 64px;
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Only apply if implementing dark mode */
+    /* Uncomment and adjust as needed */
+    /* --color-bg-primary: var(--color-neutral-900); */
+    /* --color-bg-secondary: var(--color-neutral-800); */
+    /* --color-text-primary: var(--color-neutral-50); */
+    /* --color-text-secondary: var(--color-neutral-200); */
+  }
+}

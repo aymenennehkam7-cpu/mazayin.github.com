@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Sitemap for Mazaya Restaurant
+  Generated: December 2025
+  Update the <loc> URLs to match your actual domain when deployed
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 
+    SITEMAP STRUCTURE FOR RESTAURANT WEBSITE
+    
+    Priority Guide:
+    1.0 = Most important (Homepage)
+    0.8 = Very important (Menu, Reservations)
+    0.6 = Important (About, Gallery, Contact)
+    0.4 = Less important (Policy pages)
+    
+    Change Frequency Guide:
+    daily   = Changes daily (Menu specials, featured items)
+    weekly  = Changes weekly (Menu, Events)
+    monthly = Changes monthly (Gallery, About)
+    yearly  = Rarely changes (Policies, Terms)
+  -->
+
+  <!-- ============================================
+       HOMEPAGE - Highest Priority
+       ============================================ -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ============================================
+       MAIN SECTIONS - High Priority
+       ============================================ -->
+
+  <!-- Menu Page - Critical for restaurant SEO -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/#menu</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Reservations Page - Critical for conversions -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/#reservations</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Page - Important for brand story -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/#about</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gallery Page - Important for visual appeal -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/#gallery</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Page - Important for local SEO -->
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/#contact</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================
+       ADDITIONAL PAGES (if applicable)
+       Add these when you create separate pages
+       ============================================ -->
+
+  <!-- Events/Special Occasions Page -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/events</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
+
+  <!-- Private Dining Page -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/private-dining</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  -->
+
+  <!-- Catering Services -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/catering</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+
+  <!-- Gift Cards Page -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/gift-cards</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  -->
+
+  <!-- Careers/Jobs Page -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/careers</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  -->
+
+  <!-- Press/Media Page -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/press</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  -->
+
+  <!-- ============================================
+       POLICY PAGES - Lower Priority
+       ============================================ -->
+
+  <!-- Privacy Policy -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/privacy-policy</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  -->
+
+  <!-- Terms of Service -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/terms</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  -->
+
+  <!-- Accessibility Statement -->
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/accessibility</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  -->
+
+  <!-- ============================================
+       BLOG POSTS (if applicable)
+       Add individual blog posts here
+       ============================================ -->
+
+  <!--
+  <url>
+    <loc>https://aymenennehkam7-cpu.github.io/mazayin.github.com/blog/moroccan-cooking-traditions</loc>
+    <lastmod>2025-12-17</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+  -->
+
+</urlset>
+
+<!-- 
+  IMPORTANT NOTES FOR DEPLOYMENT:
+  
+  1. CHANGE ALL URLs: Replace "aymenennehkam7-cpu.github.io/mazayin.github.com" 
+     with your actual production domain (e.g., "www.mazayarestaurant.ma")
+  
+  2. UPDATE LASTMOD DATES: Change all <lastmod> dates to reflect actual 
+     last modification dates of each page
+  
+  3. SUBMIT TO SEARCH ENGINES:
+     - Google Search Console: https://search.google.com/search-console
+     - Bing Webmaster Tools: https://www.bing.com/webmasters
+  
+  4. VALIDATE YOUR SITEMAP:
+     - Use: https://www.xml-sitemaps.com/validate-xml-sitemap.html
+     - Check for errors before submission
+  
+  5. ADD TO ROBOTS.TXT: Ensure your robots.txt file references this sitemap
+  
+  6. AUTO-GENERATION: For larger sites, consider using tools to 
+     automatically generate and update this sitemap:
+     - For Node.js: sitemap.js, nextjs-sitemap-generator
+     - For PHP: XML Sitemap Generator
+     - For static sites: Static site generators often include sitemap plugins
+  
+  7. COMPRESSED VERSION: For sites with many URLs (>50,000), consider:
+     - Splitting into multiple sitemaps
+     - Creating a sitemap index file
+     - Gzip compression (.xml.gz)
+  
+  8. IMAGE SITEMAP: If you want to enhance image SEO, create a separate 
+     image sitemap or add image tags to existing URLs
+  
+  9. RESTAURANT-SPECIFIC STRUCTURED DATA: Beyond sitemap, ensure your 
+     HTML includes proper Schema.org/Restaurant markup for:
+     - Business name, address, phone (NAP)
+     - Opening hours
+     - Menu items with prices
+     - Reviews and ratings
+     - Reservations capability
+  
+  10. LOCAL SEO: For restaurant websites, also ensure:
+      - Google Business Profile is claimed and optimized
+      - Consistent NAP across all platforms
+      - Local schema markup on contact page
+      - Reviews schema for testimonials
+-->

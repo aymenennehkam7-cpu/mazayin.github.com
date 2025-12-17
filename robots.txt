@@ -1,0 +1,105 @@
+# robots.txt for Mazaya Restaurant Website
+# https://aymenennehkam7-cpu.github.io/mazayin.github.com/
+# Updated: December 2025
+
+# =============================================================================
+# GENERAL RULES FOR ALL CRAWLERS
+# =============================================================================
+# Allow all search engines to crawl the entire site
+# This is ideal for a restaurant website that wants maximum visibility
+
+User-agent: *
+Allow: /
+
+# Crawl delay (optional - be polite to servers)
+# Crawl-delay: 1
+
+# =============================================================================
+# SITEMAP LOCATION
+# =============================================================================
+# Point search engines to your XML sitemap
+# Update this URL to match your actual domain when deployed
+
+Sitemap: https://aymenennehkam7-cpu.github.io/mazayin.github.com/sitemap.xml
+
+# =============================================================================
+# BLOCK SPECIFIC DIRECTORIES (if applicable)
+# =============================================================================
+# Uncomment and modify these if you have directories you don't want indexed
+# Common directories to block for a restaurant website:
+
+# Block admin areas (if applicable)
+# Disallow: /admin/
+# Disallow: /dashboard/
+
+# Block private or temporary files
+# Disallow: /temp/
+# Disallow: /tmp/
+# Disallow: /backup/
+
+# Block development/test directories
+# Disallow: /dev/
+# Disallow: /test/
+# Disallow: /staging/
+
+# Block search and filter result pages (to avoid duplicate content)
+# Disallow: /*?
+# Disallow: /search
+# Disallow: /filter
+
+# Block file types that shouldn't be indexed
+# Disallow: /*.pdf$
+# Disallow: /*.doc$
+# Disallow: /*.xls$
+
+# =============================================================================
+# SPECIFIC SEARCH ENGINE RULES
+# =============================================================================
+
+# Google Image Bot - Allow indexing of images
+User-agent: Googlebot-Image
+Allow: /
+
+# Google Mobile Bot - Allow mobile indexing
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing Bot - Allow indexing
+User-agent: Bingbot
+Allow: /
+
+# =============================================================================
+# BLOCK BAD BOTS (Optional)
+# =============================================================================
+# Uncomment to block known malicious bots or scrapers
+
+# Block aggressive crawlers
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
+
+# User-agent: MJ12bot
+# Disallow: /
+
+# User-agent: DotBot
+# Disallow: /
+
+# =============================================================================
+# NOTES FOR RESTAURANT WEBSITES
+# =============================================================================
+# 
+# FOR BEST SEO RESULTS:
+# 1. Keep your site fully accessible to search engines (allow everything)
+# 2. Submit your sitemap to Google Search Console and Bing Webmaster Tools
+# 3. Ensure all pages (menu, reservations, contact) are crawlable
+# 4. Use structured data (Schema.org/Restaurant) in your HTML
+# 5. Keep robots.txt simple - only block what truly needs blocking
+# 
+# WHEN DEPLOYED TO PRODUCTION:
+# 1. Update the Sitemap URL to your actual domain
+# 2. Test using: https://www.google.com/webmasters/tools/robots-testing-tool
+# 3. Monitor crawl errors in Google Search Console
+# 
+# =============================================================================

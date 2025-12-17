@@ -1,0 +1,445 @@
+/**
+ * Mazaya Restaurant - Modern CSS Reset
+ * Based on modern best practices while preserving useful defaults
+ * Ensures consistent rendering across browsers
+ */
+
+/* ============================================
+   BOX-SIZING & ROOT SETUP
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set root font size for rem calculations */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   BODY & DOCUMENT
+   ============================================ */
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   TYPOGRAPHY RESET
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Consistent baseline for text elements */
+address, blockquote, dl, figure, form, ol, ul, p, pre, table {
+  margin-bottom: 0;
+}
+
+/* Remove default list styles on navigation lists */
+nav ul,
+nav ol {
+  list-style: none;
+}
+
+/* Preserve list styles for content */
+article ul,
+article ol,
+section ul:not([class]),
+section ol:not([class]) {
+  padding-left: 1.5em;
+}
+
+/* ============================================
+   LINKS & INTERACTIVE ELEMENTS
+   ============================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* ============================================
+   BUTTONS & INPUTS
+   ============================================ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Improve input consistency */
+input,
+textarea,
+select {
+  width: auto;
+  max-width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Remove spinner from number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Search input consistency */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ============================================
+   MEDIA ELEMENTS
+   ============================================ */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove gap below images */
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* Iframe responsive */
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  text-align: inherit;
+  font-weight: inherit;
+}
+
+/* ============================================
+   ACCESSIBILITY - FOCUS STYLES
+   ============================================ */
+
+/* Modern focus indicator using :focus-visible */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom focus styles for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary-600, #b52020);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ============================================
+   UTILITY RESETS
+   ============================================ */
+
+/* Hide elements with hidden attribute */
+[hidden] {
+  display: none !important;
+}
+
+/* Prevent horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Remove details summary arrow in WebKit */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ============================================
+   SELECTION STYLING
+   ============================================ */
+
+::selection {
+  background-color: var(--color-primary-700, #8b0000);
+  color: var(--color-text-white, #ffffff);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: var(--color-primary-700, #8b0000);
+  color: var(--color-text-white, #ffffff);
+  text-shadow: none;
+}
+
+/* ============================================
+   FORM ELEMENTS ACCESSIBILITY
+   ============================================ */
+
+/* Ensure labels are clearly associated */
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Placeholder styling */
+::placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+::-moz-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.6;
+  color: inherit;
+}
+
+/* ============================================
+   SCROLLBAR STYLING (Optional Enhancement)
+   ============================================ */
+
+/* Modern browsers */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-neutral-400, #9a9a9a) var(--color-neutral-100, #ebebeb);
+}
+
+/* WebKit browsers */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-neutral-100, #ebebeb);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-400, #9a9a9a);
+  border-radius: 4px;
+  border: 2px solid var(--color-neutral-100, #ebebeb);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-neutral-500, #737373);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Don't show links for images or JavaScript/internal links */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* Hide navigation, videos, and interactive elements when printing */
+  nav,
+  video,
+  audio,
+  iframe,
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   SCREEN READER ONLY CLASS
+   ============================================ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Allow screen reader only elements to be focusable when navigated to via keyboard */
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
